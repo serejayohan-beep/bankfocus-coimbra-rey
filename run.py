@@ -39,6 +39,7 @@ def load_paths():
 
     root = get("data_root", "BANKFOCUS_DATA")
     return {
+        "root": root,
         "core": root / get("global_core_raw", "BANKFOCUS_CORE_RAW"),
         "fx": root / get("global_fx_raw", "BANKFOCUS_FX_RAW"),
         "derived": root / get("global_derived", "BANKFOCUS_DERIVED"),
@@ -76,7 +77,9 @@ def build(p):
     run("code/build/global_panel.py", p["core"], p["fx"], p["derived"])
     lines = [f"created: {dt.datetime.now().isoformat(timespec='seconds')}",
              f"code: bankfocus-coimbra-rey @ {git_rev()} (code/build/global_panel.py)",
-             f"raw core: {p['core']}", f"raw fx: {p['fx']}", ""]
+             f"raw core: DATA_ROOT/{p['core'].relative_to(p['root']).as_posix()}",
+             f"raw fx: DATA_ROOT/{p['fx'].relative_to(p['root']).as_posix()}",
+             f"raw files: {len(list(p['core'].glob('*.xlsx')))} core + {len(list(p['fx'].glob('*.xlsx')))} fx xlsx", ""]
     for f in sorted(p["derived"].glob("global_*")):
         if f.is_file():
             lines.append(f"{f.name}  {f.stat().st_size:>12,d} bytes  sha256={sha256(f)}")
