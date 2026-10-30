@@ -1,0 +1,41 @@
+\begin{table}[htbp]
+\centering
+\small
+\begin{threeparttable}
+\caption{Leverage and the real Fed Funds rate: US banks, 1997--2025}
+\label{tab:cr_eq1_2}
+\begin{tabular}{lcccc}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+ & Baseline & Year FE & Top5 (AW) & Top10 \\
+\midrule
+Lev$_{t-1}$ & $0.641^{***}$ & $0.618^{***}$ & $0.684^{***}$ & $0.639^{***}$ \\
+ & $(0.042)$ & $(0.046)$ & $(0.038)$ & $(0.042)$ \\[2pt]
+Real FF & $-0.012$ &  & $-0.052^{**}$ & $-0.010$ \\
+ & $(0.014)$ &  & $(0.021)$ & $(0.014)$ \\[2pt]
+Top5 & $4.536^{***}$ & $4.637^{***}$ &  &  \\
+ & $(0.612)$ & $(0.616)$ &  &  \\[2pt]
+FF $\times$ Top5 & $-0.666^{***}$ & $-0.639^{***}$ &  &  \\
+ & $(0.173)$ & $(0.173)$ &  &  \\[2pt]
+Top5 (asset-wtd) &  &  & $1.807^{**}$ &  \\
+ &  &  & $(0.818)$ &  \\[2pt]
+FF $\times$ Top5 (asset-wtd) &  &  & $0.101$ &  \\
+ &  &  & $(0.070)$ &  \\[2pt]
+Top10 &  &  &  & $3.219^{***}$ \\
+ &  &  &  & $(0.342)$ \\[2pt]
+FF $\times$ Top10 &  &  &  & $-0.376^{***}$ \\
+ &  &  &  & $(0.107)$ \\
+\midrule
+Bank FE & Yes & Yes & Yes & Yes \\
+Year FE & No & Yes & No & No \\
+Observations & 5,923 & 5,923 & 5,923 & 5,923 \\
+Banks & 415 & 415 & 415 & 415 \\
+Within $R^2$ & 0.580 & 0.579 & 0.516 & 0.574 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Sample: BankFocus global panel (banks with total assets $\geq$ USD 10bn in at least one year). Dependent variable: book leverage (total assets / total equity), winsorized at 1/99\% by year. FF is the annual average effective Fed Funds rate minus annual-average CPI inflation (FRED FEDFUNDS, CPIAUCSL). Top5 (Top10) = 1 if the bank's leverage is in the top 5\% (10\%) of that year's cross-section; asset-weighted version ranks leverage $\times$ assets/mean assets. Standard errors clustered by bank in parentheses. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$. Specification follows Coimbra and Rey (2024), eq.~(1) and Table A1.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

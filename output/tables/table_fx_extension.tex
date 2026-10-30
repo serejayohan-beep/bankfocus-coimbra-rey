@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+\centering
+\small
+\begin{threeparttable}
+\caption{FX exposure and the sensitivity of leverage to the Fed Funds rate (global banks, 2005--2025)}
+\label{tab:cr_fx}
+\begin{tabular}{lcccc}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+ & USD loan sh. & FX loan sh. & Foreign mkt sh. & FX deriv./TA \\
+\midrule
+Lev$_{t-1}$ & $0.410^{***}$ & $0.453^{***}$ & $0.391^{***}$ & $0.385^{***}$ \\
+ & $(0.084)$ & $(0.084)$ & $(0.071)$ & $(0.059)$ \\[2pt]
+Top5 & $17.435^{***}$ & $12.663^{***}$ & $11.396^{***}$ & $17.271^{***}$ \\
+ & $(4.313)$ & $(4.407)$ & $(2.374)$ & $(2.245)$ \\[2pt]
+FF $\times$ Top5 & $0.070$ & $-0.965$ & $-0.428$ & $-2.809^{***}$ \\
+ & $(0.505)$ & $(1.090)$ & $(0.262)$ & $(0.701)$ \\[2pt]
+$X_{t-1}$ & $-0.209$ & $0.617$ & $-0.869$ & $0.066$ \\
+ & $(0.649)$ & $(0.585)$ & $(0.844)$ & $(0.182)$ \\[2pt]
+FF $\times X_{t-1}$ & $0.084$ & $0.081$ & $0.043$ & $0.033^{**}$ \\
+ & $(0.132)$ & $(0.069)$ & $(0.060)$ & $(0.014)$ \\[2pt]
+Top5 $\times X_{t-1}$ & $-17.103^{***}$ & $-3.778$ & $2.221$ & $-2.677^{*}$ \\
+ & $(4.891)$ & $(6.759)$ & $(7.090)$ & $(1.453)$ \\[2pt]
+FF $\times$ Top5 $\times X_{t-1}$ & $-3.269$ & $0.495$ & $-0.939^{*}$ & $1.124$ \\
+ & $(2.443)$ & $(1.344)$ & $(0.529)$ & $(0.723)$ \\
+\midrule
+Bank FE & Yes & Yes & Yes & Yes \\
+Year FE & Yes & Yes & Yes & Yes \\
+Observations & 2,683 & 3,201 & 3,668 & 8,387 \\
+Banks & 358 & 396 & 571 & 840 \\
+Within $R^2$ & 0.522 & 0.496 & 0.476 & 0.474 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Sample: BankFocus global panel (banks with total assets $\geq$ USD 10bn in at least one year). Dependent variable: book leverage (total assets / total equity), winsorized at 1/99\% by year. FF is the annual average effective Fed Funds rate minus annual-average CPI inflation (FRED FEDFUNDS, CPIAUCSL). Top5 (Top10) = 1 if the bank's leverage is in the top 5\% (10\%) of that year's cross-section; asset-weighted version ranks leverage $\times$ assets/mean assets. Standard errors clustered by bank in parentheses. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$. Baseline specification follows Coimbra and Rey (2024), eq.~(1) and Table A1. $X_{t-1}$ is the lagged exposure measure named in the column header; year fixed effects absorb the FF main effect. FX derivative notional / assets winsorized at 1/99\%.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

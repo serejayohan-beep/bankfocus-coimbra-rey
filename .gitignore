@@ -1,0 +1,39 @@
+# --- Licensed BankFocus data: never commit (lives under DATA_ROOT) ---
+*.xlsx
+*.xls
+*.dta
+data/
+raw/
+derived/
+**/global_panel_*.csv
+**/bankfocus_panel_*.csv
+**/*_part*.csv
+
+# local configuration
+config/paths.local.ini
+.env
+
+# python / OS / editor
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# LaTeX build products (only .tex sources are kept)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.nav
+*.snm
+*.pdf
+output/_tmp/

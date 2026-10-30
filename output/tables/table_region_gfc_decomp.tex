@@ -1,0 +1,47 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\begin{threeparttable}
+\caption{Robustness and decomposition: build-up and deleveraging by region and country}
+\label{tab:region_gfc_decomp}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+ & \multicolumn{4}{c}{Split windows (index pts)} & \multicolumn{4}{c}{Top-decile banks (log pts)} & \multicolumn{2}{c}{Other banks (log pts)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}\cmidrule(lr){10-11}
+ & Banks & Banks & Build-up & Delever. & $\Delta A$ & $\Delta E$ & $\Delta A$ & $\Delta E$ & $\Delta A$ & $\Delta E$ \\
+ & 06--08 & 08--12 & top & top & 06--08 & 06--08 & 08--12 & 08--12 & 06--08 & 06--08 \\
+\midrule
+\multicolumn{11}{l}{\textit{Region}} \\
+N. America & 233 & 218 & 16.7 & -18.4 & -2.7 & 31.4 & 23.5 & 40.1 & 27.6 & 25.3 \\
+Europe & 317 & 307 & 25.6 & -20.8 & 17.9 & 9.9 & -20.9 & 31.0 & 30.4 & 15.2 \\
+Japan \& Dev. AP & 124 & 133 & 39.4 & -26.4 & 19.9 & -29.6 & 22.9 & 85.6 & 19.7 & -7.7 \\
+China & 24 & 36 & 10.6 & -27.9 & 69.0 & 62.5 & 92.7 & 146.1 & 45.7 & 46.4 \\
+Emerging Asia & 71 & 73 & -8.5 & -9.0 & 22.8 & 55.9 & 60.1 & 84.1 & 21.9 & 20.2 \\
+Latin America & 59 & 59 & 3.2 & -6.4 & 8.3 & 48.2 & 74.2 & 79.2 & 50.4 & 27.3 \\
+M. East \& Africa & 72 & 75 & -15.2 & -17.2 & 23.7 & 34.7 & 22.8 & 49.3 & 34.4 & 34.1 \\
+Emerging Eur. \& CIS & 24 & 30 & -10.7 & 0.6 & 31.9 & 58.8 & 41.4 & 61.7 & 54.3 & 52.3 \\
+\multicolumn{11}{l}{\textit{Europe split}} \\
+Europe core & 221 & 218 & 10.3 & -21.2 & 23.1 & 11.8 & -19.5 & 28.7 & 23.4 & 7.8 \\
+Europe periphery & 58 & 52 & 12.4 & 26.2 & 14.4 & -50.2 & -78.9 & 47.7 & 31.0 & 36.4 \\
+UK & 22 & 21 & 34.6 & -34.1 & 33.6 & 26.5 & -28.0 & 38.2 & 40.9 & 2.0 \\
+\multicolumn{11}{l}{\textit{Country}} \\
+United States & 213 & 195 & 5.8 & -18.9 & -10.9 & 27.0 & 1.7 & 24.7 & 36.6 & 26.8 \\
+Germany & 85 & 86 & 23.8 & -39.0 & 32.1 & -2.9 & -16.8 & 46.5 & 13.2 & 0.9 \\
+Japan & 68 & 72 & 40.1 & -22.4 & 22.9 & -25.8 & 16.9 & 79.2 & 20.3 & -16.3 \\
+Switzerland & 32 & 31 & -5.7 & 7.4 & 9.6 & 69.9 & 0.2 & 8.5 & 26.8 & 23.9 \\
+Italy & 27 & 25 & 38.6 & 28.7 & 65.9 & 37.2 & 24.8 & 36.8 & 41.9 & 52.2 \\
+United Kingdom & 22 & 21 & 34.6 & -34.1 & 33.6 & 26.5 & -28.0 & 38.2 & 40.9 & 2.0 \\
+Canada & 20 & 23 & -15.8 & -17.3 & 94.9 & 56.4 & -80.4 & 43.7 & 19.0 & 19.7 \\
+France & 19 & 20 & 15.9 & -9.0 & 32.5 & 16.0 & 37.1 & 25.9 & 32.2 & 15.3 \\
+Taiwan & 20 & 23 & -5.3 & -8.3 & 5.7 & -104.8 & 30.9 & 134.7 & 3.1 & -5.1 \\
+China & 22 & 33 & 11.8 & -23.8 & 69.0 & 62.5 & 92.7 & 146.1 & 45.8 & 46.5 \\
+Austria & 23 & 19 & 13.8 & -6.3 & 25.5 & 108.7 & -47.8 & -54.0 & 28.2 & 19.3 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Split windows: build-up uses banks observed in every year 2006--2008 (so banks that failed or were absorbed after 2008 are kept), $\max(I_{2007}, I_{2008}) - 100$ with 2006 = 100; deleveraging uses banks observed in every year 2008--2012, $I_{2012} - 100$ with 2008 = 100. Top quantile = p95 for regions, p90 for the Europe split and countries; groups with fewer than 15 banks are not reported. Decomposition: within the 2006--2012 constant sample, banks in the top decile of 2006 leverage vs all others; $\Delta A$, $\Delta E$ are $100\times$ log changes of the group's summed total assets and equity (USD at closing-date exchange rates). Leverage rises when $\Delta A > \Delta E$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
