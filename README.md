@@ -21,7 +21,7 @@ BankFocus(옛 Bankscope) 글로벌 은행 패널로 Coimbra & Rey (2024, *REStud
 ## 실행
 ```bash
 pip install pandas numpy python-calamine matplotlib linearmodels
-cp config/paths.example.ini config/paths.local.ini   # Windows: copy
+# 데이터 경로 기본값: config/paths.example.ini (다른 PC면 paths.local.ini로 복사해 수정)
 python run.py all
 ```
 

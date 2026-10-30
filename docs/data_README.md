@@ -331,7 +331,7 @@ Lev<sub>it</sub> = β₁ Lev<sub>i,t−1</sub> + β₂ FF<sub>t</sub> + β₃ To
 ## 8. 재현 방법
 
 ```bash
-# 0) config/paths.example.ini 를 config/paths.local.ini 로 복사하고 경로 확인
+# 0) 데이터 경로는 config/paths.example.ini 의 기본값을 씀. 다른 PC면 paths.local.ini 로 복사해 수정
 # 1) 패널 생성 (DATA_ROOT/derived/... 에 패널과 MANIFEST.txt 생성)
 python run.py build
 # 2) 그림·표·집계 CSV (output/ 갱신)

@@ -26,9 +26,13 @@ REPO = Path(__file__).resolve().parent
 
 def load_paths():
     cfg = configparser.ConfigParser()
-    local = REPO / "config" / "paths.local.ini"
-    if local.exists():
-        cfg.read(local, encoding="utf-8")
+    # paths.local.ini (git-ignored) wins; otherwise fall back to the committed example,
+    # which already holds the default Windows locations
+    for name in ("paths.local.ini", "paths.example.ini"):
+        f = REPO / "config" / name
+        if f.exists():
+            cfg.read(f, encoding="utf-8")
+            break
     sec = cfg["paths"] if cfg.has_section("paths") else {}
 
     def get(key, env):
