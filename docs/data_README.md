@@ -41,7 +41,7 @@ DATA_ROOT  (예: C:\Users\USER\Desktop\HG\Archive\Data\Bankfocus)   ← Git에 �
 
 bankfocus-coimbra-rey  (이 저장소)
 ├── run.py                             파이프라인 실행 (build / analysis)
-├── config\paths.example.ini           데이터 경로 예시 → paths.local.ini로 복사
+├── config\paths.example.ini           데이터 경로 기본값 (다른 PC면 paths.local.ini로 복사)
 ├── code\build\global_panel.py          패널 생성 (core + FX export 병합·클리닝)
 ├── code\analysis\cr_analysis.py        그림 + 회귀 (논문 eq. 1, FX 확장)
 ├── code\analysis\region_gfc.py         권역·국가별 Figure 1과 GFC 이질성, 집중도 (7.5절)

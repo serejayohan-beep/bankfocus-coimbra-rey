@@ -11,7 +11,7 @@ BankFocus(옛 Bankscope) 글로벌 은행 패널로 Coimbra & Rey (2024, *REStud
 | `code/build/` | `global_panel.py`: core·FX export 병합, 클리닝 규칙 13개 |
 | `code/analysis/` | `cr_analysis.py`(Figure 1–3, 식 (1) 회귀, FX 확장), `region_gfc.py`(권역·국가별 GFC 이질성) |
 | `code/legacy/` | 초기 북미+유럽(v3) 패널 코드. 현재 분석에는 쓰지 않음 |
-| `config/` | 데이터 경로 설정 (`paths.example.ini` → `paths.local.ini`로 복사) |
+| `config/` | 데이터 경로 설정 (`paths.example.ini` 기본값 사용; 다른 PC면 `paths.local.ini`로 복사해 수정) |
 | `data_public/` | FRED 기반 미국 명목·실질 FFR |
 | `output/` | 그림(PNG), LaTeX 표(.tex), 권역 집계 CSV |
 | `docs/data_README.md` | **데이터 상세 설명서**: 표본, 변수, 클리닝 규칙, 한계, 결과 요약 |
